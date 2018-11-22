@@ -1,0 +1,57 @@
+{
+  "_id": "page.bank-details",
+  "_type": "page.form",
+  "body": "If a refund is approved it will be paid to this account. We can only pay refunds to UK bank accounts.",
+  "components": [
+    {
+      "$component": true,
+      "$content": true,
+      "$definition": true,
+      "_id": "page.bank-details--inset",
+      "_type": "inset",
+      "html": "We can't pay refunds into building society accounts that have a roll number"
+    },
+    {
+      "$component": true,
+      "$content": true,
+      "$definition": true,
+      "_id": "page.bank-details--details",
+      "_type": "details",
+      "html": "We encrypt this bank account information to keep it safe. Only specially authorised people can see bank details, which are only ever used to process a refund.\r\n\r\nFind out more about [how we keep your information safe](https://claim-power-of-attorney-refund.service.gov.uk/terms#bank-details).",
+      "summary": "How we keep bank details safe"
+    },
+    {
+      "$component": true,
+      "$control": true,
+      "$definition": true,
+      "$field": true,
+      "_id": "page.bank-details--text.input_auto__1",
+      "_type": "text",
+      "label": "Donor's account holder name",
+      "name": "input_auto__1"
+    },
+    {
+      "_id": "page.bank-details--text.input_auto__2",
+      "_type": "text",
+      "hint": "8-digit number",
+      "label": "Account number",
+      "name": "input_auto__2",
+      "widthClassInput": "10"
+    },
+    {
+      "_id": "page.bank-details--text.input_auto__3",
+      "_type": "text",
+      "hint": "6-digit number",
+      "label": "Sort code",
+      "name": "input_auto__3",
+      "widthClassInput": "5"
+    },
+    {
+      "_id": "page.bank-details--inset--2",
+      "_type": "inset",
+      "html": "You won't see these bank details again once you continue - we hide them for your security."
+    }
+  ],
+  "heading": "Donor’s bank details",
+  "url": "bank-details"
+}
